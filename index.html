@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR" title="<html lang=&quot;pt-BR&quot;>">
+<head>
+    <meta charset="UTF-8" title="<meta charset=&quot;UTF-8&quot;>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" title="<meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>">
+    
+    <title>HTML Completo: De A a Z</title>
+    
+    <link rel="icon" href="icons8-html-5-color-120.png" type="image/x-icon" title="<link rel=&quot;icon&quot; href=&quot;favicon.ico&quot;>">
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
+        header, footer { text-align: center; padding: 10px; background-color: #f2f2f2; }
+        nav a { margin: 0 15px; text-decoration: none; }
+        section { border-bottom: 1px solid #ccc; padding-bottom: 20px; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        figure { margin: 0; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body title="<body>">
+    
+    <header title="<header>Cabeçalho da Página</header>">
+        
+        <h1>HTML Semântico e Visual</h1>
+        
+        <nav title="<nav>Menu Principal</nav>">
+            <a href="#texto" title="<a href=&quot;#texto&quot;>Texto</a>">Texto</a> | 
+            <a href="#dados" title="<a href=&quot;#dados&quot;>Dados</a>">Dados</a> |
+            <a href="#midia" title="<a href=&quot;#midia&quot;>Mídia</a>">Mídia</a>
+        </nav>
+    </header>
+
+    <main title="<main>Conteúdo Principal</main>">
+        
+            <section id="texto" title="<section id=&quot;texto&quot;>">
+                
+                <h2>Estrutura de Conteúdo (Texto)</h2>
+                
+                <h3>Parágrafos e Quebras</h3>
+                
+                <p title="<p>Parágrafo de Texto</p>">
+                    Este é um parágrafo básico de texto. 
+                    Ele agrupa sentenças e blocos de informação.
+                    <br>
+                    A tag &lt;br&gt; força uma quebra de linha.
+                </p>
+
+                <h3>Ênfase e Destaque</h3>
+                <p>
+                    Usamos <strong title="<strong>Ênfase Importante</strong>">&lt;strong&gt;</strong> para indicar importância, e 
+                    <em title="<em>Ênfase Simples</em>">&lt;em&gt;</em> para dar ênfase (itálico).
+                </p>
+                <p>
+                    Outras formatações incluem o <small title="<small>Texto Menor</small>">texto menor</small>, o 
+                    <mark title="<mark>Texto Destacado</mark>">texto destacado</mark> e o 
+                    <del title="<del>Texto Deletado</del>">texto deletado</del>.
+                </p>
+                
+                <h3>Listas</h3>
+
+                <h4>Lista de Compras</h4>
+                <ul title="<ul>Lista Não-Ordenada</ul>">
+                    <li title="<li>Item de Lista</li>">Maçãs</li>
+                    <li title="<li>Item de Lista</li>">Leite</li>
+                    <li title="<li>Item de Lista</li>">Pão</li>
+                </ul>
+                
+                <h4>Passos para Fazer Café</h4>
+                <ol title="<ol>Lista Ordenada</ol>">
+                    <li title="<li>Item de Lista Ordenada</li>">Ferver a água</li>
+                    <li title="<li>Item de Lista Ordenada</li>">Adicionar o pó de café</li>
+                    <li title="<li>Item de Lista Ordenada</li>">Coar e servir</li>
+                </ol>
+
+            </section>
+
+            <section id="dados" title="<section id='dados'>">
+                <h2>Tabelas e Dados</h2>
+                <p>Tabelas são usadas para organizar dados em linhas e colunas, tornando a informação clara e fácil de comparar.</p>
+                
+                <table title="<table>Tabela de Dados</table>">
+                    <caption>Comparativo de tecnologias Web</caption>
+                    <thead>
+                        <tr>
+                            <th>Tecnologia</th>
+                            <th>Propósito Principal</th>
+                            <th>Ano de Lançamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Estrutura e conteúdo</td>
+                            <td>1993</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Estilo e apresentação</td>
+                            <td>1996</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Interatividade e comportamento</td>
+                            <td>1995</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="midia" title="<section id='midia'>">
+                <h2>Mídia Incorporada</h2>
+                <p>A web moderna é rica em mídias. Veja como incorporar imagens, vídeos e áudio diretamente na sua página.</p>
+
+                <h3>Imagens</h3>
+                <figure>
+                    <img src="images.jpg">
+                    <figcaption>Ata</figcaption>
+                </figure>
+
+                <h3>Vídeo</h3>
+                <p>Você pode incorporar vídeos de plataformas como o YouTube para enriquecer seu conteúdo.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=JB1Pqb4Q-BDI70v5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                <h3>Áudio</h3>
+                <p>Incorpore áudios, como podcasts ou músicas, diretamente na página.</p>
+                <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </section>
+    </main>
+    
+    <footer title="<footer>Rodapé da Página</footer>">
+        <p><small title="<small>Texto Menor</small>">&copy; 2025 Demonstração HTML Completa.</small></p>
+    </footer>
+
+</body>
+</html>
