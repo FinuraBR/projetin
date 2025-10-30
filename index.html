@@ -17,6 +17,11 @@
         th { background-color: #f2f2f2; }
         figure { margin: 0; }
         img { max-width: 100%; height: auto; }
+        form p { margin-bottom: 10px; }
+        label { font-weight: bold; }
+        input[type="text"], input[type="email"], textarea, select { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { padding: 10px 15px; background-color: #333; color: white; border: none; cursor: pointer; }
+        blockquote { border-left: 4px solid #ccc; padding-left: 15px; margin-left: 0; font-style: italic; }
     </style>
 </head>
 <body title="<body>">
@@ -28,7 +33,9 @@
         <nav title="<nav>Menu Principal</nav>">
             <a href="#texto" title="<a href=&quot;#texto&quot;>Texto</a>">Texto</a> | 
             <a href="#dados" title="<a href=&quot;#dados&quot;>Dados</a>">Dados</a> |
-            <a href="#midia" title="<a href=&quot;#midia&quot;>Mídia</a>">Mídia</a>
+            <a href="#midia" title="<a href=&quot;#midia&quot;>Mídia</a>">Mídia</a> |
+            <a href="#interativo" title="<a href=&quot;#interativo&quot;>Interativo</a>">Interativo</a> |
+            <a href="#contato" title="<a href=&quot;#contato&quot;>Contato</a>">Contato</a>
         </nav>
     </header>
 
@@ -79,6 +86,11 @@
             <section id="dados" title="<section id='dados'>">
                 <h2>Tabelas e Dados</h2>
                 <p>Tabelas são usadas para organizar dados em linhas e colunas, tornando a informação clara e fácil de comparar.</p>
+
+                <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table" title="<blockquote>Citação em Bloco</blockquote>">
+                    <p>O Elemento HTML &lt;table&gt; representa dados tabulares — isto é, informações apresentadas em uma tabela bidimensional composta por linhas e colunas de células contendo dados.</p>
+                    <footer>— <cite title="<cite>Citação</cite>">MDN Web Docs</cite></footer>
+                </blockquote>
                 
                 <table title="<table>Tabela de Dados</table>">
                     <caption>Comparativo de tecnologias Web</caption>
@@ -114,9 +126,9 @@
                 <p>A web moderna é rica em mídias. Veja como incorporar imagens, vídeos e áudio diretamente na sua página.</p>
 
                 <h3>Imagens</h3>
-                <figure>
-                    <img src="images.jpg">
-                    <figcaption>Ata</figcaption>
+                <figure title="<figure>Figura com Imagem e Legenda</figure>">
+                    <img src="images.jpg" alt="Fruta ata, também conhecida como graviola, sobre uma superfície." title="<img>Imagem com texto alternativo">
+                    <figcaption title="<figcaption>Legenda da Figura</figcaption>">Ata</figcaption>
                 </figure>
 
                 <h3>Vídeo</h3>
@@ -125,9 +137,50 @@
                 
                 <h3>Áudio</h3>
                 <p>Incorpore áudios, como podcasts ou músicas, diretamente na página.</p>
-                <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+                <audio controls src="da-uma-sugada-aqui-mike.org.mp3" title="<audio>Player de Áudio</audio>">
                     Seu navegador não suporta o elemento de áudio.
                 </audio>
+            </section>
+
+            <section id="interativo" title="<section id='interativo'>">
+                <h2>Elementos Interativos</h2>
+                <p>HTML moderno permite criar elementos interativos sem a necessidade de JavaScript.</p>
+                <details title="<details>Elemento de Detalhes Expansível</details>">
+                    <summary title="<summary>Título Visível do 'details'</summary>">Clique aqui para ver mais informações</summary>
+                    <p title="<p>Conteúdo do 'details'</p>">Este conteúdo estava oculto e agora está visível. A tag &lt;details&gt; é ótima para seções de FAQ ou para esconder informações secundárias que o usuário pode optar por ver.</p>
+                </details>
+            </section>
+
+            <section id="contato" title="<section id='contato'>">
+                <h2>Formulário de Contato</h2>
+                <p>Formulários são essenciais para a interação com o usuário, permitindo o envio de informações.</p>
+                <form action="#" method="post" title="<form>Formulário</form>">
+                    <p>
+                        <label for="nome" title="<label>Rótulo para Campo</label>">Nome:</label><br>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo" title="<input type='text'>Campo de Texto">
+                    </p>
+                    <p>
+                        <label for="email" title="<label>Rótulo para Campo</label>">Email:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com" title="<input type='email'>Campo de Email">
+                    </p>
+                    <p>
+                        <label for="assunto" title="<label>Rótulo para Campo</label>">Assunto:</label><br>
+                        <select id="assunto" name="assunto" title="<select>Caixa de Seleção</select>">
+                            <option value="duvida" title="<option>Opção de Seleção</option>">Dúvida</option>
+                            <option value="sugestao" title="<option>Opção de Seleção</option>">Sugestão</option>
+                            <option value="reclamacao" title="<option>Opção de Seleção</option>">Reclamação</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="mensagem" title="<label>Rótulo para Campo</label>">Sua Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem aqui..." title="<textarea>Área de Texto</textarea>"></textarea>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="termos" name="termos" required title="<input type='checkbox'>Caixa de Checagem">
+                        <label for="termos" title="<label>Rótulo para Campo</label>">Eu aceito os termos de serviço.</label>
+                    </p>
+                    <button type="submit" title="<button type='submit'>Botão de Envio</button>">Enviar Mensagem</button>
+                </form>
             </section>
     </main>
     
